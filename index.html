@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Rock Paper Scissor!</h1>
+    </header>
+    <!-- User profile -->
+    <div class="card-wrapper">
+      <div class="card">
+        <div id="user-title" class="badge">User</div>
+        <div id="user-score" class="score">0</div>
+      </div>
+      <div class="card">
+        <div id="comp-title" class="badge">Computer</div>
+        <div id="comp-score" class="score">0</div>
+      </div>
+    </div>
+    <!-- Banner win -->
+    <div class="banner">
+      <h1 id="result" class="result-tie result-win result-lose">Start!</h1>
+    </div>
+
+    <div class="choices">
+      <div class="choice" id="rock">
+        <img class="img" src="images/rock.png" alt="" />
+      </div>
+      <div class="choice" id="paper">
+        <img class="img" src="images/paper.png" alt="" />
+      </div>
+      <div class="choice" id="scissor">
+        <img class="img" src="images/scissors.png" alt="" />
+      </div>
+    </div>
+    <h3 id="action-message" class="subtitle">Choose your move</h3>
+
+    <div class="wrapper">
+      <h3 id="action-message" class="subtitle">Or</h3>
+      <button id="reset" class="reset" onclick="resetScore()">Reset</button>
+    </div>
+    <div class="footer">
+      <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">© Rama Yogaswara. 2024</p>
+    </div>
+  </body>
+  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+  <!-- Include SweetAlert CSS and JS from CDN -->
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</html>
